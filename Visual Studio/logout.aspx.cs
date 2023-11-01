@@ -15,6 +15,7 @@ namespace AppWebAspLoginUsuario
             Response.Cookies["email"].Expires = DateTime.Now.AddDays(-1);
 
             Response.Redirect("~/Login.aspx");
+            /*Aqui*/
         }
     }
 }

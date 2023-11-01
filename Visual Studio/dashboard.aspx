@@ -4,10 +4,20 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>DashBoard</h1>
     <h2>Bem vindo <asp:Label ID="lblUser" runat="server" Text=""></asp:Label></h2>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container bootstrap snippets bootdey">
+    <div class="row">
+      <div class="profile-nav col-md-3">
+          <div class="panel">
+              <div class="user-heading round">
+                  <a href="#">
+                      <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                  </a>
         <table>
         <tr>
             <td>E-mail:</td>
             <td>
+
                 <asp:TextBox ID="txbEmail" runat="server"></asp:TextBox></td>
             </tr>
             <tr>
@@ -15,6 +25,12 @@
                 <td><asp:TextBox ID="txbPass" runat="server"></asp:TextBox></td>
     
 </tr>
+              <tr>
+      <td>Numero:</td>
+      <td>
+
+          <asp:TextBox ID="TexNUMERO" runat="server"></asp:TextBox></td>
+      </tr>
         
         <tr>
             <td></td>

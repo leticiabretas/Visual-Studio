@@ -14,6 +14,8 @@ namespace AppWebAspLoginUsuario
 {    
     public partial class Login : System.Web.UI.Page
     {
+
+
         /* Criação da Conexão com palavras reservados SQL*/
         SqlConnection con = new SqlConnection();
         /* Criação dos comandos cmd SqlCommand com uso de palavras reservadas SQL */
@@ -77,7 +79,15 @@ namespace AppWebAspLoginUsuario
                 // Preaparaçao para o Navegador
                 HttpCookie idUser = new HttpCookie("id_user", IdUserCookie);
                 // Inserção do cookie no navegador
-                Response.Cookies.Add(idUser);                
+                Response.Cookies.Add(idUser); 
+
+ //Cria o cookie do Numero
+ string IdUserCookie = check["Numero"].ToString();
+ // Preaparaçao para o Navegador
+ HttpCookie idUser = new HttpCookie("Numero", IdUserCookie);
+ // Inserção do cookie no navegador
+ Response.Cookies.Add(Numero);   
+
 
                 //direcionar para a pagina principal
                 Response.Redirect("Dashboard.aspx");
